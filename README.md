@@ -20,10 +20,10 @@
 
 | 이름   | 역할              | GitHub 링크                      |
 |--------|-------------------|----------------------------------|
-| 박소미 | 로그인         | [GitHub](https://github.com/nyximos)   |
+| 박소미 | 로그인    | [GitHub](https://github.com/nyximos)   |
 | 이소영 | 게시물 공유 및 좋아요       | [GitHub](https://github.com/0111s)   |
 | 이혜지 | 게시물 목록 조회  | [GitHub](https://github.com/hyeji1020)   |
-| 최하록 | 회원가입  | [GitHub](https://github.com/dorianharok)   |
+| 최하록 | 회원가입 및 게시물 통계 | [GitHub](https://github.com/dorianharok)   |
 
 
 ### ⏰ 개발 기간
