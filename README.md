@@ -8,9 +8,8 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3-green?logo=spring&logoColor=white)
 ![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-green?logo=spring&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-green?logo=springsecurity&logoColor=white)
-![Spring Batch](https://img.shields.io/badge/Spring%20Batch-green?logo=spring&logoColor=white)
-![Querydsl](https://img.shields.io/badge/Querydsl-blue?logo=hibernate&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7-blue?logo=mysql&logoColor=white)
+![Querydsl](https://img.shields.io/badge/Querydsl-blue?logo=hibernate&logoColor=white)
 
   
 ### 📌 서비스 개요
