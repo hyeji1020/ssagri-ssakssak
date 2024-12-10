@@ -9,6 +9,7 @@
 ![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-green?logo=spring&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-green?logo=springsecurity&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-5.7-blue?logo=mysql&logoColor=white)
+![JPA](https://img.shields.io/badge/JPA-ORM-orange)    
 ![Querydsl](https://img.shields.io/badge/Querydsl-blue?logo=hibernate&logoColor=white)
 
   
@@ -20,7 +21,7 @@
 
 | 이름   | 역할              | GitHub 링크                      |
 |--------|-------------------|----------------------------------|
-| 박소미 | 로그인    | [GitHub](https://github.com/nyximos)   |
+| 박소미 | 로그인, JWT    | [GitHub](https://github.com/nyximos)   |
 | 이소영 | 게시물 공유 및 좋아요       | [GitHub](https://github.com/0111s)   |
 | 이혜지 | 게시물 목록 조회  | [GitHub](https://github.com/hyeji1020)   |
 | 최하록 | 회원가입 및 게시물 통계 | [GitHub](https://github.com/dorianharok)   |
@@ -55,9 +56,7 @@
     
   - 게시물 목록
     - Feed에 표시될 게시물 목록을 조회하는 API.
-    - <details>
-      <summary> 다음 쿼리 파라미터를 지원:</summary>
-        
+    -
       | Parameter   | Type     | Default             | Description                                                                                  |
       |-------------|----------|---------------------|----------------------------------------------------------------------------------------------|
       | `hashtag`   | `string` | 본인 계정          | 정확히 일치하는 해시태그 검색. 예: `맛집`, `성수동`.                                         |
@@ -68,7 +67,6 @@
       | `page_count`| `number` | 10                  | 페이지당 게시물 수.                                                                          |
       | `page`      | `number` | 0                   | 조회하려는 페이지.                                                                           |
       
-      </details>
     - 게시물 목록 API에서 `content`는 최대 **20자**까지만 표시.
     - 불필요한 필드는 제외.
   
@@ -80,24 +78,19 @@
     - 좋아요 클릭 시 각 SNS 별 명시된 외부 API 를 호출하여 내부 서비스에서 좋아요 수 증가
    
   - 게시물 공유
-    - 게시물은 외부 서비스에서 관리되며, 각 SNS 별로 아래 API 호출
+    - 게시물은 외부 서비스에서 관리되며, 각 SNS 별로 API 호출
 
   - 게시물 통계
-    <details>
-      <summary>다음 파라미터 사용</summary>
-
-      
-    | Parameter   | Type         | Default             | Description                                                                                  |
-    |-------------|--------------|---------------------|----------------------------------------------------------------------------------------------|
-    | `hashtag`   | `string`     | 본인 계정          | 조회할 해시태그.                                                                             |
-    | `type`      | `enum`       | 필수 값            | `date` 또는 `hour`.                                                                         |
-    | `start`     | `date`       | 오늘로부터 7일 전  | 조회 시작일 (예: `2023-10-01`).                                                             |
-    | `end`       | `date`       | 오늘               | 조회 종료일 (예: `2023-10-25`).                                                             |
-    | `value`     | `string`     | `count`            | `count`, `view_count`, `like_count`, `share_count` 중 하나.                                 |
-  
-  
-    </details>
     
+    -    
+      | Parameter   | Type         | Default             | Description                                                                                  |
+      |-------------|--------------|---------------------|----------------------------------------------------------------------------------------------|
+      | `hashtag`   | `string`     | 본인 계정          | 조회할 해시태그.                                                                             |
+      | `type`      | `enum`       | 필수 값            | `date` 또는 `hour`.                                                                         |
+      | `start`     | `date`       | 오늘로부터 7일 전  | 조회 시작일 (예: `2023-10-01`).                                                             |
+      | `end`       | `date`       | 오늘               | 조회 종료일 (예: `2023-10-25`).                                                             |
+      | `value`     | `string`     | `count`            | `count`, `view_count`, `like_count`, `share_count` 중 하나.                                 |
+
     - `value`
         - `count` 일 시, 게시물 개수
         - `view_count` 조회된 게시물 들의 `view_count` 의 `sum` (`like_count`,`share_count` 도 동일)
@@ -124,14 +117,14 @@
 ### 4. ERD 및 디렉터리 구조
 
 <details>
-<summary>ERD</summary>
+<summary>ERD (🖱클릭)</summary>
   
   ![image](https://github.com/user-attachments/assets/fb2d6a6b-31f7-4439-bb14-6934af4e3285)
 
 </details>
 
 <details>
-<summary>디렉터리 구조</summary>
+<summary>디렉터리 구조 (🖱클릭)</summary>
   
   ```markdown
   ├── docs
