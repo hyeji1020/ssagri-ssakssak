@@ -11,6 +11,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-5.7-blue?logo=mysql&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-ORM-orange)    
 ![Querydsl](https://img.shields.io/badge/Querydsl-blue?logo=hibernate&logoColor=white)
+![Spring RestDocs](https://img.shields.io/badge/Spring%20RestDocs-green?logo=spring&logoColor=white)
 
   
 ### 📌 서비스 개요
@@ -38,6 +39,7 @@
 2. [구현 기능](#2-구현-기능)
 3. [API 명세](#3-api-명세)
 4. [ERD 및 디렉터리 구조](#4-erd-및-디렉터리-구조)
+5. [이슈 관리 및 코드 리뷰](#5-이슈-관리-및-코드-리뷰)
 
 
 ### 1. 서비스 아키텍처
@@ -278,4 +280,16 @@
                       └── mockuser
                           ├── MockUser.java
                           └── WithMockCustomSecurityContextFactory.java
+```
+</details>
+
+
+### 5. 이슈 관리 및 코드 리뷰
+
+| **이슈 관리** | **코드 리뷰** |
+|---------------|---------------|
+| <img src="https://github.com/user-attachments/assets/5bd22c34-3c4f-4f35-bb7b-848294298cfc" width="500"> | <img src="https://github.com/user-attachments/assets/ea8c9f59-8261-4434-97d9-c2fef3bb6368" width="500"> |
+
+
+
 
