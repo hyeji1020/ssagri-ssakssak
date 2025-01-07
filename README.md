@@ -8,7 +8,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.2-green?logo=spring&logoColor=white)
 ![Spring Data JPA](https://img.shields.io/badge/Spring%20Data%20JPA-green?logo=spring&logoColor=white)
 ![Spring Security](https://img.shields.io/badge/Spring%20Security-green?logo=springsecurity&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-5.7-blue?logo=mysql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-blue?logo=mysql&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-ORM-orange)    
 ![Querydsl](https://img.shields.io/badge/Querydsl-blue?logo=hibernate&logoColor=white)
 ![Spring RestDocs](https://img.shields.io/badge/Spring%20RestDocs-green?logo=spring&logoColor=white)
@@ -35,17 +35,13 @@
 </div>
 
 ## 📋 목차
-1. [서비스 아키텍처](#1-서비스-아키텍처)
-2. [구현 기능](#2-구현-기능)
-3. [API 명세](#3-api-명세)
-4. [ERD 및 디렉터리 구조](#4-erd-및-디렉터리-구조)
-5. [이슈 관리 및 코드 리뷰](#5-이슈-관리-및-코드-리뷰)
+1. [구현 기능](#1-구현-기능)
+2. [API 명세](#2-api-명세)
+3. [ERD 및 디렉터리 구조](#3-erd-및-디렉터리-구조)
+4. [이슈 관리 및 코드 리뷰](#4-이슈-관리-및-코드-리뷰)
 
 
-### 1. 서비스 아키텍처
-추가 예정입니다.
-
-### 2. 구현 기능
+### 1. 구현 기능
 1. 회원가입 및 로그인
    - **회원가입**:
      - 이메일 및 비밀번호 유효성 검사.
@@ -116,7 +112,7 @@
 
 ----
 
-### 3. API 명세
+### 2. API 명세
 
 | Method | 기능명       | URL                          | Auth Required |
 |--------|--------------|------------------------------|---------------|
@@ -130,7 +126,7 @@
 | POST   | 게시물 공유  | /boards/:id/share          | ✅             |
 | GET    | 통계         | /boards/stats              | ✅             |
 
-### 4. ERD 및 디렉터리 구조
+### 3. ERD 및 디렉터리 구조
 
 - ERD
   <br>
@@ -284,7 +280,7 @@
 </details>
 
 
-### 5. 이슈 관리 및 코드 리뷰
+### 4. 이슈 관리 및 코드 리뷰
 
 | **이슈 관리** | **코드 리뷰** |
 |---------------|---------------|
